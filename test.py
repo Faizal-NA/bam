@@ -610,18 +610,10 @@ def setting():
 		setting()
 #  if hc in ['2','02']:
 #		method.append('mobile')
-    elif hc in ['']:
-        print('>> Pilih Sing Bener Koplok ')
 #	if hc in ['3','03']:
 #		method.append('mbasic')
 	if hc in ['4','04']:
 		method.append('touch')
-    elif hc in ['']:
-        print('>> Pilih Sing Bener Koplok ')
-	else:
-		method.append('free')
-    elif hc in ['']:
-        print('>> Pilih Sing Bener Koplok ')
 	print('')
 	_jembot_ = input('>> Tambahkan Aplikasi ( Y/t ) ')
 	if _jembot_ in ['']:
