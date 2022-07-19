@@ -600,7 +600,7 @@ def setting():
 	print('>> 1. Mobile ')
 #	print('>> 2. Mbasic ')
 #	print('>> 3. Touch  ')
-#	print('>> 4. free ')
+#	print('>> 4. Free ')
 	print('')
 	hc = input('>> Pilih : ')
 	if hc in ['1','01']:
@@ -609,13 +609,19 @@ def setting():
 		print('>> Pilih Sing Bener Koplok ')
 		setting()
 #  if hc in ['2','02']:
-#		method.append('Mbasic')
+#		method.append('mobile')
+    elif hc in ['']:
+        print('>> Pilih Sing Bener Koplok ')
 #	if hc in ['3','03']:
-#		method.append('Touch')
+#		method.append('mbasic')
 	if hc in ['4','04']:
-		method.append('free')
+		method.append('touch')
+    elif hc in ['']:
+        print('>> Pilih Sing Bener Koplok ')
 	else:
 		method.append('free')
+    elif hc in ['']:
+        print('>> Pilih Sing Bener Koplok ')
 	print('')
 	_jembot_ = input('>> Tambahkan Aplikasi ( Y/t ) ')
 	if _jembot_ in ['']:
@@ -680,14 +686,13 @@ def passwrd():
 			else:pass
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
-			if 'free' in method:
-				pool.submit(crackfree,idf,pwv)
-			if 'touch' in method:
-				pool.submit(cracktouch,idf,pwv)
 			if 'mbasic' in method:
 				pool.submit(crackmbasic,idf,pwv)
-			else:
-				pool.submit(crackmbasic,idf,pwv)
+			if 'touch' in method:
+				pool.submit(cracktouch,idf,pwv)
+			if 'free' in method:
+				pool.submit(crackfree,idf,pwv)
+			
 	print('')
 	cetak(nel('\t[cyan]✓[green] Rapih, kiriman uing[cyan] ✓[white] '))
 	print(f'[{b}•{x}]{h} OK : {h}%s '%(ok))
@@ -770,7 +775,7 @@ def crack(idf,pwv):
 			time.sleep(1)
 	loop+=1
 #------------------[ METHODE-Mbasic ]-------------------#
-def crackfree(idf,pwv):
+def crackmbasic(idf,pwv):
 	global loop,ok,cp
 	sys.stdout.write(f"\r💐 {P}[{bo}Mbasic{P}]{P}[{b}{loop}{P}/{p}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{m}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
@@ -932,8 +937,8 @@ def cracktouch(idf,pwv):
 		except requests.exceptions.ConnectionError:
 			time.sleep(31)
 	loop+=1
-#----------------------[ METHODE-MTOUCH+MOBILE-4 ]-----------------#
-def crackmbasic(idf,pwv):
+#----------------------[ METHODE-Free ]-----------------#
+def crackfree(idf,pwv):
 	global loop,ok,cp
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
