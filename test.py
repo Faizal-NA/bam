@@ -598,9 +598,9 @@ def setting():
 		print('>> Pilih Sing Bener Koplok ')
 		exit()
 	print('>> 1. Mobile ')
-#	print('>> 2. Mbasic ')
-#	print('>> 3. Touch  ')
-#	print('>> 4. Free ')
+	print('>> 2. Mbasic ')
+	print('>> 3. Touch  ')
+	print('>> 4. Free ')
 	print('')
 	hc = input('>> Pilih : ')
 	if hc in ['1','01']:
