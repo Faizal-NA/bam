@@ -573,8 +573,9 @@ def crack_file():
 		setting()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
-	print(f'{x}>> 1. Akun Kolot ')
-	print('>> 2. Akun Anyar ')
+	print(f'{x}>> 1. Akun Old ')
+	print('>> 2. Akun New ')
+	print('>> 3. Random ')
 	print('')
 	hu = input('>> Pilih : ')
 	if hu in ['1','01']:
@@ -590,36 +591,33 @@ def setting():
 		for xmud in range(bcm):
 			id2.append(muda[bcmi])
 			bcmi -=1
-#	elif hu in ['3','03']:
-#		for bacot in id:
-#			xx = random.randint(0,len(id2))
-#			id2.insert(xx,bacot)
+	elif hu in ['3','03']:
+		for bacot in id:
+			xx = random.randint(0,len(id2))
+			id2.insert(xx,bacot)
 	else:
-		print('>> Pilih Sing Bener Koplok ')
+		print('>> Pilih Yang Bener Kontooll ')
 		exit()
 	print('>> 1. Mobile ')
 	print('>> 2. Mbasic ')
 	print('>> 3. Free  ')
-	print('>> 4. Mtouch ')
+	print('>> 4. touch ')
 	print('')
 	hc = input('>> Pilih : ')
 	if hc in ['1','01']:
 		method.append('mobile')
-	if hc in ['']:
-		print('>> Pilih Sing Bener Koplok ')
-		setting()
 	if hc in ['2','02']:
-		method.append('free')
+		method.append('mbasic')
 	if hc in ['3','03']:
 		method.append('touch')
 	if hc in ['4','04']:
-		method.append('mbasic')
+		method.append('free')
 	else:
 		method.append('mobile')
 	print('')
-	_jembot_ = input('>> Tambahkan Aplikasi ( Y/t ) ')
+	_jembot_ = input('>> Tambahkan Aplikasi Terkait ( Y/t ) ')
 	if _jembot_ in ['']:
-		print('>> Pilih Sing Bener Koplok ')
+		print('>> Pilih Yang Bener Kontol ')
 		back()
 	elif _jembot_ in ['y','Y']:
 		taplikasi.append('ya')
