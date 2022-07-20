@@ -700,7 +700,7 @@ def passwrd():
 	else:
 		print(f'\t{x}>>{k} Good Bye Dadaahh{x} << ')
 		time.sleep(2)
-		exit()
+		exit() 
 #--------------------[ METODE1-Mobile ]-----------------#
 def crack(idf,pwv):
 	global loop,ok,cp
